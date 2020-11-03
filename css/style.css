@@ -7,7 +7,7 @@
 /*custom properties */
 
 :root {
-    --ff-primary:  'Open Sans', sans-serif;
+    --ff-primary: 'Open Sans', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
 
     --fw-reg: 300;
@@ -32,7 +32,7 @@
     }
 }
 
-/*Geeneral styles */
+/*General styles */
 
 body {
     background: var(--clr-light);
