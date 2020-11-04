@@ -58,7 +58,7 @@ img {
 
 /* Typography */
 
-strong { font-weight: var(--fw-bold)}
+strong { font-weight: var(--fw-bold) }
 
 :focus{
     outline: 3px solid var(--clr-accent);
