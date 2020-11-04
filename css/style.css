@@ -112,6 +112,7 @@ h3 { font-size: var(--fs-h3)}
 }
 
 .section__subtitle--intro strong {
+    font-weight: var(--fw-bold);
     display: block;
 }
 
