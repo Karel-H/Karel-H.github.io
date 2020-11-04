@@ -186,6 +186,17 @@ header {
     z-index: 1000; 
 }
 
+.nav-open {
+    background: red;
+}
+
+
+
+
+
+
+
+
 /* HAMBURGER */ 
 
 .hamburger {
