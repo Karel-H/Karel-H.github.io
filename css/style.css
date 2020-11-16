@@ -16,6 +16,7 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #3342cace;
+    --clr-accent2: #164e1a;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -126,6 +127,12 @@ h3 { font-size: var(--fs-h3)}
 .section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+.section__subtitle--bachelor {
+    background: var(--clr-accent2);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
@@ -389,15 +396,16 @@ blend-mode: macht es dunkler*/
     text-align: center;
 }
 
-.section__subtitle--work-experience {
+.section__subtitle--work {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .portfolio__item {
@@ -512,6 +520,21 @@ blend-mode: macht es dunkler*/
     color: var(--clr-light);
     text-align: center;
 }
+
+.overview__bachelorthesis{
+    background-color: var(--clr-dark);
+    background-image: url(https://cdn.pixabay.com/photo/2016/12/13/05/28/dna-1903319_1280.jpg) ;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    text-align: center;
+}
+.overview__bachelorthesis p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .overview__thesis p{
     max-width: 600px;
     margin-left: auto;
