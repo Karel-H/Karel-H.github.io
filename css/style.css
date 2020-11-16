@@ -555,6 +555,21 @@ blend-mode: macht es dunkler*/
     margin-right: auto;
 }
 
+.overview__programming{
+    background-color: var(--clr-dark);
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png) ;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    text-align: center;
+}
+.overview__programming p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .portfolio__item-footer{
     background: rgb(27, 27, 27);
     color: var(--clr-accent);
