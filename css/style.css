@@ -541,6 +541,20 @@ blend-mode: macht es dunkler*/
     margin-right: auto;
 }
 
+.overview__publications{
+    background-color: var(--clr-dark);
+    background-image: url(https://images.pexels.com/photos/3631711/pexels-photo-3631711.jpeg) ;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    text-align: center;
+}
+.overview__publications p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .portfolio__item-footer{
     background: rgb(27, 27, 27);
     color: var(--clr-accent);
