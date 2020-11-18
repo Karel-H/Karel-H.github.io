@@ -15,7 +15,7 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #3342cace;
+    --clr-accent: #2c3ff0d3;
     --clr-accent2: #164e1a;
 
     --fs-h1: 3rem;
@@ -60,6 +60,16 @@ section {
 img {
     display: block;
     max-width: 100%;
+}
+
+/* Links */
+
+a:link {
+    color: #5581df
+}
+
+a:visited {
+    color:  #07a2fcce
 }
 
 /* Typography */
