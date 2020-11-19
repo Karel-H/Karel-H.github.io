@@ -90,7 +90,7 @@ strong { font-weight: var(--fw-bold) }
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: .5em 2em;
+    padding: .5em 1.4em;
     background: var(--clr-accent);
     text-decoration: none;
     cursor: pointer;
