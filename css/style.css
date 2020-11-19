@@ -8,10 +8,12 @@
 
 :root {
     --ff-primary: 'Open Sans', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    /*--ff-secondary: 'Source Code Pro', monospace;*/
+    --ff-secondary:  'Big Shoulders Stencil Display', cursive;
+    --ff-language:'Open Sans Condensed', sans-serif;
 
     --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-bold: 1000;
 
     --clr-light: #fff;
     --clr-dark: #303030;
@@ -22,6 +24,7 @@
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+    --fs-lang: 0.7rem;
 
     --bs: 0.25em 0.25em 0.25em rgba(0,0,0,.25), 
             0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -54,7 +57,7 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 3em 2em;
 }
 
 img {
@@ -164,6 +167,97 @@ header {
 }
 
 
+/* Language dropdown menu */
+.language-menu {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--ff-language);
+    float: left;
+    padding-right: 5em;
+    position: relative;
+    padding-top: -2.5em;
+    
+}
+
+.selected-lang {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    margin: -5px 0 0 30px;
+    width: 80px;
+    line-height: 1.7;
+    font-family: var(--ff-language);    
+    background-color: #439bff8e;
+    border: 1px solid #439aff;    
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.selected-lang::before{
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://www.countryflags.io/gb/shiny/32.png) ;
+    font-family: var(--ff-language);
+    
+}
+
+.selected-langde {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    margin: -5px 0 0 30px;
+    width: 80px;
+    line-height: 1.7;
+    font-family: var(--ff-language);    
+    background-color: #439bff8e;
+    border: 1px solid #439aff;    
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.selected-langde::before{
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://www.countryflags.io/at/shiny/32.png) ;
+    font-family: var(--ff-language);
+    
+}
+
+.language-menu ul {
+    margin: -5px 0 0 10px;
+    padding: 4px;
+    background-color: var(--clr-light);
+    border: 1px solid #f8f8f8;
+    font-family: var(--ff-language);
+    display:flex;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.language-menu ul li {
+    list-style: none;
+    font-family: var(--ff-language);
+}
+
+.language-menu ul li a {
+    width: auto;
+    display: block;
+}
+
+.language-menu ul li a:hover {
+    cursor: pointer;
+}
+/*hamburger*/
 .nav {
     position: fixed;
     background: var(--clr-dark);
@@ -173,7 +267,7 @@ header {
     left: 0;
     right: 0;
     z-index: 100;
-
+    
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, 0.5, 1);
 }
@@ -202,7 +296,7 @@ header {
 }
 
 .nav-toggle {
-    padding: .5em;
+    padding: .6em;
     background: transparent;
     border: 0;
     cursor: pointer; 
@@ -245,7 +339,7 @@ header {
 .hamburger::after {
     background: var(--clr-accent);
     width: 2em;
-    height: 3px;
+    height: 3.5px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out
 }
@@ -274,6 +368,8 @@ header {
     display: inline-block;
 }
 
+
+
 @media (min-width: 600px) {
     .intro {
         display: grid;
@@ -301,7 +397,7 @@ header {
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
-
+        
     }
 }
 
@@ -602,4 +698,5 @@ blend-mode: macht es dunkler*/
     margin: 2em 0 0;
     padding: 0;
 }
+
 
