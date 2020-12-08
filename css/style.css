@@ -203,7 +203,7 @@ header {
     display: block;
     width: 32px;
     height: 32px;
-    background-image: url(https://karel-h.github.io/img/united-kingdom-flag-3d-icon-32.png);
+    background-image: url(https://karel-h.github.io/img/united-kingdom-flag-button-square-icon-32.png);
     font-family: var(--ff-language);
     
 }
@@ -229,7 +229,7 @@ header {
     display: block;
     width: 32px;
     height: 32px;
-    background-image: url(https://karel-h.github.io/img/austria-flag-3d-icon-32.png) ;
+    background-image: url(https://karel-h.github.io/img/austria-flag-button-square-icon-32.png) ;
     font-family: var(--ff-language);
     
 }
